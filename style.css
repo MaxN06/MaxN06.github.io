@@ -5,13 +5,21 @@ nav{
 
 body{
     background-color:grey
+    
 }
 
 h1{
     text-align: center;
-    
+
 }
 
 a{
     color: #000;
 }
+
+img{
+    padding: 200px;
+}
+
+body{
+    font-family: 'Jacuqes Francois Shadow', 
