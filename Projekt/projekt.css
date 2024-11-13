@@ -11,10 +11,12 @@ header {
     text-align: left;
     font-size: 18px;
     font-weight: bold;
+    display: flex;
+    justify-content: space-between;
 }
 
 header img {
-    width: 50px; /* Logo size */
+ width: 50px; /* Logo size */
     vertical-align: middle;
 }
 
@@ -22,48 +24,139 @@ nav {
     display: inline-block;
     margin-left: 10px;
     vertical-align: middle;
+    transition: ease-in-out 500ms;
 }
 
 nav a {
     margin: 0 15px;
-    color: #000; /* Black text color for navigation links */
-    text-decoration: none; /* No underline for links */
+    color: #000; 
+    text-decoration: none; 
     font-weight: bold;
 }
 
+.links {
+    display: flex;
+}
+
 .images {
-    display: flex; /* Flexbox layout for the images */
-    justify-content: center; /* Centering the images horizontally */
+    display: flex; 
+    justify-content: center;
     margin: 20px 0;
+    gap: 25px;  
     
 }
 
 .images img {
-    width: 45%; /* Each image takes up 45% of the width */
-    margin: 0px; /* Spacing between images */
+    flex: 1 1 0;
+    margin: 0px; 
+}
+.meny{
+    width: 15px;
+    margin-left: 50px;
+    display: none;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #111; /* Dark background for the footer */
-    border-top: 2px solid #fcd116; /* Yellow border at the top of the footer */
+    background-color: #111; 
+    border-top: 2px solid #fcd116; 
 }
 
 footer img {
-    height: 40px; /* Sponsor logos size */
-    margin: 0 10px; /* Spacing between sponsor logos */
+    height: 40px; 
+    margin: 0 10px; 
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 900px) {
     a {
-      font-size: 12px;
+      font-size: 10px;
       flex-direction: column;
      }
      .images img {
-        width: 90%;
-        margin: 30px;
+        width: 100%;
+        
+        margin-inline: auto;
     }   
     
 .images{ flex-direction: column;}
 }
+
+
+
+
+main{
+    margin-inline: 25px;
+}
+
+
+header > * {
+    outline: 2px solid red;;
+}
+
+
+@media only screen and (max-width: 640px) {
+   
+    a {
+        font-size: 7px; 
+        
+       }
+    .meny{
+        margin: 0px;
+        display: block;
+    }
+    .images img {
+        width: 100%;
+        
+    } 
+
+    nav{
+        opacity: 0;
+
+
+       
+    }
+
+  }
+
+  .hidenav{
+    opacity: 1 !important;
+     /* lägg över hela sidan  */
+     position: absolute;
+     top: 0;
+     left: 1;
+     right: 0;
+     bottom: 0;
+     height: 100%;
+     background-color: rgb(255, 208, 0);
+     width: 100%;
+     filter: opacity(90%);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     text-align: center;
+     gap: 60px;
+     
+
+
+     
+  }
+    
+  a {
+    font-size: 20px;
+ }
+
+ 
+    .meny{
+        z-index: 999;
+        position: relative;
+
+    }
+
+    
+
+    
+
+     
+    
+
