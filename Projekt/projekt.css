@@ -1,9 +1,15 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
     background-color: #000;
     color: #fff;
+    
 }
+
+
+p{
+    line-height: 1.5;
+}
+
 
 header {
     background-color: #fcd116;
@@ -90,11 +96,6 @@ main{
 }
 
 
-header > * {
-    outline: 2px solid red;;
-}
-
-
 @media only screen and (max-width: 640px) {
    
     a {
@@ -121,7 +122,6 @@ header > * {
 
   .hidenav{
     opacity: 1 !important;
-     /* lägg över hela sidan  */
      position: absolute;
      top: 0;
      left: 1;
