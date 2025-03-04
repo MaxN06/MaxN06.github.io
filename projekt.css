@@ -2,7 +2,8 @@ body {
     margin: 0;
     background-color: #000;
     color: #fff;
-    
+    font-family: "Roboto Condensed", sans-serif;
+
 }
 
 
@@ -12,7 +13,7 @@ p{
 
 
 header {
-    background-color: #fcd116;
+    background-color: #fce001;
     padding: 10px;
     text-align: left;
     font-size: 18px;
@@ -22,7 +23,7 @@ header {
 }
 
 header img {
- width: 50px; /* Logo size */
+ width: 50px;
     vertical-align: middle;
 }
 
@@ -31,6 +32,7 @@ nav {
     margin-left: 10px;
     vertical-align: middle;
     transition: ease-in-out 500ms;
+    display: flex; align-items: center;
 }
 
 nav a {
@@ -114,21 +116,22 @@ main{
     nav{
         opacity: 0;
 
-
+    
        
     }
 
-  }
+    
+  
 
   .hidenav{
-    opacity: 1 !important;
+opacity: 1 !important;
      position: absolute;
      top: 0;
      left: 1;
      right: 0;
      bottom: 0;
      height: 100%;
-     background-color: rgb(255, 208, 0);
+     background-color: rgb(255, 251, 0);
      width: 100%;
      filter: opacity(90%);
      display: flex;
@@ -153,10 +156,4 @@ main{
 
     }
 
-    
-
-    
-
-     
-    
-
+     }

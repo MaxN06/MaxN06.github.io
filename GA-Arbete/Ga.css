@@ -1,0 +1,172 @@
+
+html,body{
+    min-height: 100vh;
+}
+
+body {
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: "Roboto Condensed", sans-serif;
+    
+    display: grid;
+    grid-template-rows: auto 1fr auto auto;
+
+}
+
+
+p{
+    line-height: 1.5;
+}
+
+
+header {
+    background-color: #B2D1ED;
+    padding: 10px;
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+ width: 150px;
+    vertical-align: middle;
+}
+
+nav {
+    display: inline-block;
+    text-align: center;
+ 
+    vertical-align: middle;
+    transition: ease-in-out 500ms;
+    display: flex; align-items: center;
+    right: 50%;
+    position: relative;
+    transform: translateX(50%);
+}
+
+nav a {
+    margin: 0 15px;
+    color: #000000; 
+    text-decoration: none; 
+    font-weight: bold;
+}
+
+.links {
+    display: flex;
+}
+
+.images {
+    display: flex; 
+    justify-content: center;
+    margin: 20px 0;
+    gap: 25px;  
+    border: solid #B2D1ED;
+    border-radius: 50px;
+    
+    
+}
+
+.images img {
+    flex: 1 1 0;
+    margin: 25px; 
+}
+.meny{
+    width: 15px;
+    margin-left: 50px;
+    display: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #B2D1ED;
+    border-top: 2px solid #B2D1ED;
+    margin-top: 10px;
+
+}
+
+footer img {
+    height: 40px; 
+    margin: 0 10px; 
+}
+
+.Tabeller > * {
+    flex: 1 1 0;
+    aspect-ratio: 2;
+   }
+    
+
+@media only screen and (max-width: 1177px) {
+    .images{
+        flex-direction: column;
+        
+    } 
+  .Tabeller > * {
+    flex: 1 1 100%;
+
+  }
+}
+
+
+@media only screen and (max-width: 800px) {
+    .meny{
+        margin: 0px;
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+    .hidenav{
+        opacity: 1 !important;
+        position: absolute;
+        top: 0;
+        
+        
+        bottom: 0;
+        height: 100%;
+        background-color: #B2D1ED;  
+        width: 100%;
+        filter: opacity(90%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 60px;
+
+        }
+   
+
+  }
+
+    
+  a {
+    font-size: 20px;
+ }
+
+ 
+    .meny{
+        z-index: 999;
+        position: relative;
+
+    }
+
+
+   .Tabeller{
+
+    
+       background-color: red;
+        
+       display: flex; 
+       flex-wrap:wrap;
+
+    
+
+
+
+   }
+    
+  
